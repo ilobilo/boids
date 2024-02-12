@@ -182,6 +182,7 @@ auto main() -> int
                     ImGui::SliderFloat("Randomness", &boids::randomness, 0.0f, 2.0f);
                     ImGui::SliderFloat("Min cos angle", &boids::min_cos_angle, -1.f, 1.f);
                     ImGui::SliderFloat("Max speed", &boids::max_speed, 0.0f, 20.0f);
+                    ImGui::SliderInt("Reset num boids", &num_boids, 2, 2000);
 
                     if (ImGui::RadioButton("First", &target, first_boid) || target_boid == nullptr)
                         target_boid = std::addressof(boids.boids_list.front());

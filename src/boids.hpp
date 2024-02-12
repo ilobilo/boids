@@ -6,7 +6,7 @@
 #include <random>
 #include <vector>
 
-static constexpr size_t default_num_boids = 50;
+inline int num_boids = 100;
 
 class boid
 {

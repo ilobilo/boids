@@ -179,6 +179,6 @@ void boids::add()
 void boids::reset()
 {
     this->boids_list.clear();
-    for (size_t i = 0; i < default_num_boids; i++)
+    for (size_t i = 0; i < static_cast<size_t>(num_boids); i++)
         this->add();
 }

@@ -2,7 +2,7 @@
 
 project('boids', ['c', 'cpp'],
     default_options : [
-        'cpp_std=c++23',
+        'cpp_std=c++17',
         'c_std=c17'
     ]
 )
