@@ -22,8 +22,8 @@ executable('boids',
         dependency('glm'),
         dependency('gl'),
         dependency('imgui', default_options : [
-            'opengl=true',
-            'glfw3=true'
+            'opengl=enabled',
+            'glfw=enabled'
         ])
     ],
     sources : sources,
